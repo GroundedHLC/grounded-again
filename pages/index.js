@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Banner from "../components/Jewelry/Banner";
 import CategoryBanner from "../components/Jewelry/CategoryBanner";
-import HotProducts from "../components/Jewelry/HotProducts";
 import baseUrl from '../utils/baseUrl';
 
 const Jewelry = ({products}) => {
@@ -9,7 +8,6 @@ const Jewelry = ({products}) => {
         <React.Fragment>
             <Banner />
             <CategoryBanner />
-            <HotProducts products={products} />
         </React.Fragment>
     );
 }

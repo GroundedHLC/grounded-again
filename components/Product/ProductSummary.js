@@ -22,7 +22,7 @@ const ProductSummary = ({ name, mediaUrl, _id, price, sku, productType, user }) 
                             <li>
                                 <span>Vendor:</span>
                                 <Link href="#">
-                                    <a onClick={e => e.preventDefault()}>Lereve</a>
+                                    <a onClick={e => e.preventDefault()}>Grounded</a>
                                 </Link>
                             </li>
                             <li>

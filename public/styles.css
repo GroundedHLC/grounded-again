@@ -717,7 +717,7 @@ img {
 
 /* Login Area */
 .login-area {
-  background-image: url(images/login-bg.jpg);
+  background-image: url(https://res.cloudinary.com/pauseprogramming/image/upload/v1593473296/grounded/yosefalls_bssapw.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -834,7 +834,7 @@ img {
 
 /* Signup Area */
 .signup-area {
-  background-image: url(images/signup-bg.jpg);
+  background-image: url(https://res.cloudinary.com/pauseprogramming/image/upload/v1593473296/grounded/yosefalls_bssapw.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;

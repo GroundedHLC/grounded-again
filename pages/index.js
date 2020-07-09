@@ -1,29 +1,15 @@
 import axios from 'axios';
-import Banner from "../components/Jewelry/Banner";
-import CategoryBanner from "../components/Jewelry/CategoryBanner";
+import Banner from '../components/Jewelry/Banner';
+import CategoryBanner from '../components/Jewelry/CategoryBanner';
 import baseUrl from '../utils/baseUrl';
 
-const Jewelry = ({products}) => {
-    return(
-        <React.Fragment>
-            <Banner />
-            <CategoryBanner />
-        </React.Fragment>
-    );
-}
-
-Jewelry.getInitialProps = async (ctx) => {
-    // console.log(ctx.query)
-    const page = ctx.query.page ? ctx.query.page : "1";
-    const size = 8;
-    const searchTerm = "jewelry";
-    // fetch data on server
-    const url = `${baseUrl}/api/products`;
-    const payload = { params: {page, size, searchTerm}}
-    const response = await axios.get(url, payload);
-    // return response data as an object
-    return response.data
-    // note: this object will be merge with existing props
-}
+const Jewelry = ({ products }) => {
+  return (
+    <React.Fragment>
+      <Banner />
+      <CategoryBanner />
+    </React.Fragment>
+  );
+};
 
 export default Jewelry;

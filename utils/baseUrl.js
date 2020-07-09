@@ -1,6 +1,6 @@
 const baseUrl =
   process.env.NODE_ENV === 'production'
-    ? 'https://vercel.com/groundedhlc/again'
+    ? 'https://again.vercel.app'
     : 'http://localhost:3000';
 
 export default baseUrl;

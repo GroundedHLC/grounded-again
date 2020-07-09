@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "continue": true
+    },
+    {
+      "src": "/api/(.*)",
+      "methods": ["OPTIONS"],
+      "dest": "/api/cors"
+    }
+  ],
+  "name": "my-mongodb-api",
+  "version": 2,
+  "env": {
+    "MONGODB_URI": "mongodb+srv://Paul:Mau5trap@cluster0-selxu.mongodb.net/test?retryWrites=true&w=majority"
+  }
+}
